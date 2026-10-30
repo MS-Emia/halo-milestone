@@ -1,0 +1,102 @@
+name: check milestones
+
+on:
+  schedule:
+    # 毎時0分はGitHub全体で混雑して遅延・スキップされやすいので17分にずらす
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "実行モード"
+        type: choice
+        options: [normal, dry_run, test_webhook]
+        default: normal
+
+concurrency:
+  group: check-milestones
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      has_site: ${{ steps.site.outputs.has_site }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests
+
+      - name: Run check
+        id: run
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          MODE: ${{ inputs.mode || 'normal' }}
+        # 一部の動画で通知に失敗しても、成功分の state commit とサイト更新は行いたいので
+        # ここでは失敗させず、終了コードを記録して最後のステップで反映する
+        run: |
+          set +e
+          case "$MODE" in
+            dry_run) DRY_RUN=1 python scripts/check.py ;;
+            test_webhook) python scripts/check.py --test-webhook ;;
+            *) python scripts/check.py ;;
+          esac
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Commit state.json
+        if: ${{ !cancelled() }}
+        run: |
+          if git diff --quiet -- state.json; then
+            echo "state.json に変更なし"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json
+          git commit -m "Update milestone state"
+          # 手動 push と競合した場合に備えて1回だけ取り込み直す
+          git push || (git pull --rebase && git push)
+
+      - name: Check site data
+        id: site
+        if: ${{ !cancelled() }}
+        run: |
+          if [ -f site/data.json ]; then
+            echo "has_site=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_site=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/upload-pages-artifact@v5
+        if: ${{ !cancelled() && steps.site.outputs.has_site == 'true' }}
+        with:
+          path: site/
+
+      - name: Fail if check failed
+        if: ${{ !cancelled() && steps.run.outputs.exit_code != '0' }}
+        run: |
+          echo "scripts/check.py が終了コード ${{ steps.run.outputs.exit_code }} で終了しました(1=実行時エラー, 2=設定エラー)。上のログを確認してください"
+          exit 1
+
+  deploy:
+    needs: check
+    # check が通知失敗で赤くなっても、生成済みのサイトは公開する
+    if: ${{ !cancelled() && needs.check.outputs.has_site == 'true' }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

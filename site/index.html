@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://i.ytimg.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Halo Count — 歌ってみた再生数メーター</title>
+  <meta name="description" content="天音かなたの歌ってみた動画の再生数と、次の節目までの進捗を表示する非公式の個人用ページ">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cellipse cx='16' cy='16' rx='13' ry='6' fill='none' stroke='%23F6D77A' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 背景のきらめき(装飾) -->
+  <div class="sky" aria-hidden="true"></div>
+
+  <!-- 自作SVGシンボル: ハローと羽 -->
+  <svg width="0" height="0" class="sr-only" aria-hidden="true">
+    <defs>
+      <symbol id="halo" viewBox="0 0 64 24">
+        <ellipse cx="32" cy="12" rx="28" ry="8" fill="none" stroke="currentColor" stroke-width="4"/>
+      </symbol>
+      <symbol id="wing" viewBox="0 0 64 48">
+        <path d="M62 40C50 42 34 40 22 32 10 24 3 13 2 4c8 6 15 8 22 8-5-3-8-7-9-11 9 6 18 9 27 9-3-2-5-5-5-8 9 7 17 13 21 22 3 6 4 11 4 16z" fill="currentColor"/>
+        <path d="M26 24c8 4 18 6 30 5M18 14c10 6 22 9 36 9" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="sparkle" viewBox="0 0 24 24">
+        <path d="M12 0c1 7 5 11 12 12-7 1-11 5-12 12-1-7-5-11-12-12 7-1 11-5 12-12z" fill="currentColor"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <svg class="brand-wing brand-wing--left" aria-hidden="true"><use href="#wing"/></svg>
+        <div class="brand-text">
+          <svg class="brand-halo" aria-hidden="true"><use href="#halo"/></svg>
+          <h1>Halo Count</h1>
+          <p class="brand-sub">天音かなた 歌ってみた 再生数メーター</p>
+        </div>
+        <svg class="brand-wing brand-wing--right" aria-hidden="true"><use href="#wing"/></svg>
+      </div>
+      <p class="updated" id="updated" aria-live="polite">読み込み中…</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="notice" class="notice" role="status" hidden></div>
+
+    <section id="approaching-section" class="section" aria-labelledby="approaching-title" hidden>
+      <h2 id="approaching-title" class="section-title">
+        <svg class="title-icon" aria-hidden="true"><use href="#sparkle"/></svg>
+        もうすぐ節目
+      </h2>
+      <div id="approaching-list" class="grid grid--feature"></div>
+    </section>
+
+    <section class="section" aria-labelledby="all-title">
+      <div class="section-head">
+        <h2 id="all-title" class="section-title">
+          <svg class="title-icon" aria-hidden="true"><use href="#halo"/></svg>
+          全動画
+          <span id="video-count" class="count"></span>
+        </h2>
+        <div class="sort" role="group" aria-label="並び順">
+          <button type="button" class="sort-btn" data-sort="remaining" aria-pressed="true">残りが少ない順</button>
+          <button type="button" class="sort-btn" data-sort="views" aria-pressed="false">再生数順</button>
+        </div>
+      </div>
+      <div id="all-list" class="grid"></div>
+    </section>
+
+    <section class="section" aria-labelledby="history-title">
+      <h2 id="history-title" class="section-title">
+        <svg class="title-icon" aria-hidden="true"><use href="#wing"/></svg>
+        到達履歴
+      </h2>
+      <ol id="history-list" class="history"></ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>このページは非公式の個人用ファンページです。カバー株式会社・hololive production および天音かなたさんとは関係ありません。</p>
+      <p>動画タイトル・サムネイル等の著作権その他の権利は、各権利者に帰属します。公式画像・ロゴ・ファンアートは使用していません(装飾はすべて自作です)。</p>
+      <p>
+        再生数などのデータは <a href="https://developers.google.com/youtube/v3" rel="noopener noreferrer">YouTube Data API</a> を利用して1時間ごとに取得しています(表示は取得時点の値です)。
+        データ提供: YouTube。
+        <a href="https://www.youtube.com/t/terms" rel="noopener noreferrer">YouTube 利用規約</a> ・
+        <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google プライバシーポリシー</a>
+      </p>
+      <p>このページは閲覧者の個人情報を収集せず、Cookie も使用しません。表示用フォントは Google Fonts から、サムネイルは YouTube(i.ytimg.com)から読み込みます。</p>
+    </div>
+  </footer>
+
+  <template id="card-template">
+    <article class="card">
+      <a class="thumb" target="_blank" rel="noopener noreferrer">
+        <img alt="" loading="lazy" decoding="async" width="320" height="180">
+      </a>
+      <div class="card-body">
+        <h3 class="card-title"><a target="_blank" rel="noopener noreferrer"></a></h3>
+        <p class="views"><span class="views-num"></span><span class="views-unit">回</span></p>
+        <div class="progress-row">
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill"></div>
+          </div>
+          <span class="progress-pct"></span>
+        </div>
+        <p class="remaining"></p>
+        <p class="last"></p>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
