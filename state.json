@@ -1,4 +1,815 @@
 {
   "version": 1,
-  "videos": {}
+  "videos": {
+    "-BI2YFYWnjc": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "【1人2役】獣ゆく細道／天音かなた(Cover)"
+    },
+    "01nzMZP1_xQ": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "おらくる"
+    },
+    "08zYuyX3mRo": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "【Blu-ray発売直前】大切フォトグラフ/ hololive IDOL PROJECT【Bloom, ダイジェストMV】"
+    },
+    "0HmntAvK-GM": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "【LIVE】花の塔 - あまからっぺ cover【hololive】"
+    },
+    "0m4wLKzmPYc": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 4,
+      "title": "混沌ブギ / 天音かなた(cover)"
+    },
+    "0ziNItsX3iQ": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "アディショナルメモリー／天音かなた(cover)"
+    },
+    "1NL-sIP9p_U": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 4,
+      "title": "ド屑 / 天音かなた×百鬼あやめ×雪花ラミィ×AZKi(cover)"
+    },
+    "234RMlK0ntc": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "強風オールバック / 天音かなた(cover)"
+    },
+    "23nEnPOXLEk": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "【MV】マドロミ / 天音かなた・常闇トワ【ディープインサニティ アサイラム ゲーム主題歌】"
+    },
+    "2GMU_uWTqIc": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "中空の庭 (UnknownDIVA ver.)"
+    },
+    "2ILWn-YyzTQ": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 5,
+      "title": "おらくる / 天音かなた(official)"
+    },
+    "3BrtCYZyOXE": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 4,
+      "title": "レクイエム / ラプラス・ダークネス×天音かなた cover-Kanaria×星街すいせい【歌ってみた】"
+    },
+    "3CQJ0gJ5AKE": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "フォニイ／天音かなた(cover)"
+    },
+    "4N3smY1pKgo": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "フラジール／天音かなた(cover)"
+    },
+    "4jLU7NErdCI": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "【結束バンド】月並みに輝け / 天音かなた(cover)"
+    },
+    "54TvG--sg8c": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "ムーンライト伝説 / 魔法少女ホロウィッチ！(cover) 【天音かなた・さくらみこ・姫森ルーナ・宝鐘マリン・白上フブキ・雪花ラミィ】"
+    },
+    "5L8eoqaZ6WU": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "終わりへ向かう始まりの歌　天音かなた(cover)"
+    },
+    "5iswrqeglrw": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "【LIVE】名前のない怪物 - 天音かなた cover【hololive】"
+    },
+    "62rvE51K7Zw": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "【発売前に聴ける🔫】天音かなた 2nd Album「Trigger」試聴クロスフェード / Amane Kanata 2nd Album \"Trigger\" cross fade【hololive】"
+    },
+    "6Wbto57VKWk": {
+      "approach_notified_for": 7,
+      "history": [],
+      "last_milestone": 6,
+      "title": "うまぴょい伝説 /Cover ホロライブ"
+    },
+    "6XmGrb-MYVw": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "BestFriend // covered by 天音かなた、雪花ラミィ"
+    },
+    "7XqOWIiGFeM": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "天使のagape (UnknownDIVA ver.)"
+    },
+    "8HylJNyMuzU": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 5,
+      "title": "アウトサイダー／天音かなた(Cover)"
+    },
+    "9kQ2GtvDV3s": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 51,
+      "title": "【おちゃめ機能】ホロライブが吹っ切れた【24人で歌ってみた】"
+    },
+    "9lpIj8vAJC0": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "ソーラン節(フル) / 天音かなた"
+    },
+    "9lqHkY8-anc": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "マーシャル・マキシマイザー / 天音かなた(cover)"
+    },
+    "9viw1iX15QU": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 4,
+      "title": "唱 / 天音かなた×大神ミオ×尾丸ポルカ×ラプラス・ダークネス×沙花叉クロヱ×儒烏風亭らでん(cover)"
+    },
+    "9yrHV4Bea5Y": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 6,
+      "title": "ロウワー／天音かなた×ラプラス・ダークネス(cover)"
+    },
+    "A81wI_AySTA": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "マフィア(Mafia) / 天音かなた(cover)"
+    },
+    "AVAOoP2g2BQ": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "【MV】メメントモリ「lumière」/ Song by 天音かなた【hololive】"
+    },
+    "BCt3E-FJFdA": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "ハピチョコ / covered by さくらみこ×宝鐘マリン×天音かなた×沙花叉クロヱ×姫森ルーナ"
+    },
+    "BFFvwrb4xrw": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "バグ／天音かなた(cover)"
+    },
+    "BPI8aQ0xhQg": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 5,
+      "title": "おジャ魔女カーニバル!! / 魔法少女ホロウィッチ！(cover) 【天音かなた・さくらみこ・姫森ルーナ・宝鐘マリン・紫咲シオン・沙花叉クロヱ】"
+    },
+    "Bq8-XeogJzo": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "Blue Journey - astro (Official Lyric Video) [hololive]"
+    },
+    "CUGGBhdGWXI": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "きゅうくらりん / 天音かなた(cover)"
+    },
+    "CreBLwKpLXc": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "【Original MV】Knock it out! - 天音かなた【Giga & TeddyLoid】"
+    },
+    "CwZMBnPx4co": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "Capture the Moment"
+    },
+    "DSgu3_K3p2U": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "返信願望 / 天音かなた(official)"
+    },
+    "DdKWbqsvpl8": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "シャンティ / 天音かなた(cover)"
+    },
+    "E6LWLQjgynE": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "神っぽいな / 湊あくあ/天音かなた Cover【ホロライブ】"
+    },
+    "EbWme7sDqgU": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 4,
+      "title": "メズマライザー / 天音かなた×湊あくあ(cover)"
+    },
+    "EpKWRRlN-BI": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "色彩 - 尾丸ポルカ&天音かなた(cover)"
+    },
+    "FzwYKoKN_KE": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 12,
+      "title": "ゴーストルール／天音かなた(Cover)"
+    },
+    "GU1TZDTOeD4": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "チノカテ／天音かなた(cover)"
+    },
+    "HGi00w1Be8g": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 4,
+      "title": "【激ムズハモリ】勇者 - 天音かなた＆AZKi cover【hololive】"
+    },
+    "I5Bx7xPDU0w": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "Shiny Smily Story (Sololive.ver) / 天音かなた"
+    },
+    "IdXhY6zGC4s": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "誰も見てない夢を見ろ / 天音かなた(official)"
+    },
+    "JiZHJzcbs4s": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "きゅーぴっど。 / 天音かなた(official)"
+    },
+    "KKHHsNhBF8s": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "インドア系ならトラックメイカー／天音かなた×宝鐘マリン(cover)"
+    },
+    "Ktk_EDLDPeY": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "【Original Anime MV】別世界 - 天音かなた【ホロライブ】"
+    },
+    "LimknLQ8Ngw": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "ハッピーピープル"
+    },
+    "NqMSkYjvJq8": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "別世界 (UnknownDIVA ver.)"
+    },
+    "O01nNUXFoM8": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "あの夏が飽和する。 / 天音かなた(cover)"
+    },
+    "OHuNxItVx_A": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "モニタリング (Best Friend Remix) / 天音かなた(cover)"
+    },
+    "Ohf-kbf6cR4": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "Last-resort / 天音かなた(official)"
+    },
+    "PCm3F4n4_w8": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "START UP / 天音かなた(official)"
+    },
+    "Pb-n8O4C4To": {
+      "approach_notified_for": 4,
+      "history": [],
+      "last_milestone": 3,
+      "title": "【LIVE】メフィスト - 天音かなた cover【hololive】"
+    },
+    "PyAixTkD4YY": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "Drain／天音かなた(cover)"
+    },
+    "Q6aH0MZCjPU": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "天音かなた 1st Album「Unknown DIVA」試聴クロスフェード / Amane Kanata 1st Album \"Unknown DIVA\" cross fade - hololive"
+    },
+    "QD3vEctbWGg": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "【Cover】Beyond the way / Pavolia Reine × Amane Kanata"
+    },
+    "R8eEQ_eOiXI": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "III Justen x Sena Remix.ver / LYRA (Kanata × Niko × Calliope × Risu × Elizabeth)"
+    },
+    "RBJgdbKoAxY": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "救済のÉnde"
+    },
+    "Rept_crNzyw": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "【Original MV】純粋心 - 天音かなた【つんく／テレビ東京系「ゴッドタン」2月度エンディングテーマ】"
+    },
+    "S-VngJTUdmE": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "うっせぇわ／天音かなた＆常闇トワ(Cover)"
+    },
+    "SebgFzzswLQ": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "天界弩級オシゴトロード / かなけん（天音かなた 沙花叉クロヱ AZKi）【Official Music Video】"
+    },
+    "Sv3HckLI7kg": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "カムパネルラ／天音かなた×しぐれうい(cover)"
+    },
+    "THdwYbaWAeM": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "怪獣 - サカナクション / AZKi × 天音かなた (Cover)"
+    },
+    "TJSur7yNKTc": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "踊 (Bon-Odo Remix)／天音かなた(cover)"
+    },
+    "TyILqS4nF3M": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "chocolate box／角巻わため×天音かなた(Cover)"
+    },
+    "U7L-96JpXe4": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "テレパシ / 天音かなた(cover)"
+    },
+    "USrIMGRBA78": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 4,
+      "title": "ヒバナ／天音かなた(Cover)"
+    },
+    "Ur0K2WA67jw": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 10,
+      "title": "【5人で】Alice in N.Y.【歌ってみた/ホロALICE】"
+    },
+    "WGbSPVkAzDo": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "【ざぁーこ♡。】みむかｩわナイストライ/天音かなた×椎名唯華×しぐれうい×星川サラ×雪花ラミィ(cover)"
+    },
+    "WJQveddc_Q4": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "[オリジナル曲] 中空の庭 - 天音かなた"
+    },
+    "WYKCz9hbXkY": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "ラビットホール / 天音かなた×沙花叉クロヱ(cover)"
+    },
+    "X8j49duZjwc": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "阿修羅ちゃん／天音かなた(cover)"
+    },
+    "XPkVo5Opnqk": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "【最強難易度】UNDEAD - 天音かなた cover【hololive】"
+    },
+    "YcfZziSg0cg": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "三つ葉の結びめ／AZKi & 天音かなた(Cover)"
+    },
+    "YnZ-60MBz8U": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "【maimai でらっくす】CiRCLE CAMPAiGN / サツキ feat.天音かなた【9/18(木)登場！】"
+    },
+    "YzQCNmk3YYA": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 5,
+      "title": "【#hololivesummer2023】メインテーマ『青春アーカイブ』アニメーションMV"
+    },
+    "Z2K1H9D0DZ8": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "片羽(カタハ) / 天音かなた(official)"
+    },
+    "ZDuoUAAU0ug": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "アイドル / 天音かなた(cover)"
+    },
+    "_8yP7wml4Qs": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "アタシは問題作 / 天音かなた(cover)"
+    },
+    "_jI4rO4kAks": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "青のすみか / 天音かなた(cover)"
+    },
+    "_kT4a8IzM70": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "【MV】秒針を噛む／天音かなた(Cover)"
+    },
+    "_qmAo83zOUg": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "私へ　天音かなた(cover)"
+    },
+    "av9hRwPuhpw": {
+      "approach_notified_for": 2,
+      "history": [],
+      "last_milestone": 1,
+      "title": "KING / 天音かなた(cover)"
+    },
+    "b3jcNR2_PF4": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "【全部僕の声で】ソーラン節【天音かなた/ホロライブ4期生】"
+    },
+    "bS_qxC5_quM": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "コールボーイ 彼方くん.ver"
+    },
+    "c5czz3xhwTw": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "KICKBACK / 天音かなた(cover)"
+    },
+    "cUgwWE6AMcY": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "可愛くてごめんにオタクコール入れてみた【天音かなた】"
+    },
+    "d1SPCBrEYSA": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "孤独の宗教 / 猫又おかゆ＆天音かなた (Cover)"
+    },
+    "dWhH50ADZTc": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "世界で一番のアイドル / 天音かなた(official)"
+    },
+    "dhjTuybQbu0": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "IRIS OUT - 天音かなた feat.天音こなた(cover)"
+    },
+    "e2c08JOSGwI": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "【6人 holoID×EN×JPで】はなまるぴっぴはよいこだけ / Hanamaru Pippi wa Yoiko Dake【COVER】おそ松さん Osomatsu-san OP"
+    },
+    "eJGZ3iyA_SA": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "しゅうまつがやってくる！／かなるーな(cover)"
+    },
+    "eRYi0oyJNGA": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "テトリス / 天音かなた(cover)"
+    },
+    "eRdoPm0YCJs": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "再会 (produced by Ayase) / 天音かなた×AZKi(cover)"
+    },
+    "gDfd2ICWezg": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "【MV】*Luna - ピース！！【DAY2 - VTuber Fes Japan 2022】 公式テーマソング"
+    },
+    "gkubheGDwiE": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "snooze／天音かなた(cover)"
+    },
+    "hUchhqq0fpA": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "【推しの子】サインはB アニメsize / 天音かなた、AZKi、沙花叉クロヱ(cover)"
+    },
+    "i6y0ybi59CI": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "ずうっといっしょ！ / 天音かなた×雪花ラミィ×百鬼あやめ×AZKi(cover)"
+    },
+    "iB-58-7BeB4": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "【限界高音】ロストワンの号哭 - 天音かなた cover【hololive】"
+    },
+    "j6TLAMymuXo": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "Amane Kanata 1st Solo Live “LOCK ON”【Blu-ray受注開始】"
+    },
+    "jXIzziEvXDo": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "【囁き声で】贖罪／天音かなた(cover)"
+    },
+    "jkJJuL6oiVo": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "【３人で】ビビデバ - 天音かなた＆沙花叉クロヱ＆AZKi cover【hololive】"
+    },
+    "k0usYxw3pko": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "Our Bright Parade"
+    },
+    "k7cpjmkc1Rw": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 7,
+      "title": "キセキ結び - ホロライブ4期生"
+    },
+    "kK8ajwVjBEI": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "至上主義アドトラック／天音かなた＆桃鈴ねね"
+    },
+    "kb-Le_XFrtk": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "片羽"
+    },
+    "m7MuUadCV90": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "[21秒ロングトーン] unravel - 天音かなた 3DLIVE  \"別世界\" [Hololive]"
+    },
+    "mLvEiuz3-Sk": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 4,
+      "title": "炉心融解／天音かなた(cover)"
+    },
+    "mQxHUn9E-Ec": {
+      "approach_notified_for": 1,
+      "history": [],
+      "last_milestone": 0,
+      "title": "【激アツ歌唱】革命デュアリズム - 天音かなた＆アユンダ・リス cover【hololive】"
+    },
+    "mcQs0iQE0bs": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 9,
+      "title": "【Original MV】特者生存ワンダラダー!! 【天音かなた/hololive】"
+    },
+    "mgHhamjgLOc": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "8番出口(Full ver) / 天音かなた(cover)"
+    },
+    "nK4v-Xjx7mM": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "SORAN BUSHI Remix.ver   AMANE KANATA"
+    },
+    "p30XdSlkWOc": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "Blue Journey - あの日の僕らへ (Official Video) [hololive]"
+    },
+    "pYdoAOzMXDo": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 4,
+      "title": "愛言葉Ⅳ／天音かなた(cover)"
+    },
+    "qG1HQ9-QlPI": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "Leech"
+    },
+    "rmWKzc_Nmvs": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "ちょっとあざとい／天音かなた(cover)"
+    },
+    "ruTeLFjV894": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 6,
+      "title": "テレキャスタービーボーイ(long ver.)／天音かなた(cover)"
+    },
+    "shXDiB3CZ60": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "粛聖!! ロリ神レクイエム☆ / 天音かなた×天宮こころ×AZKi×獅子堂あかり×姫森ルーナ(cover)"
+    },
+    "sogpRSCNLo8": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "NEW KAWAII // covered by 百鬼あやめ×猫又おかゆ×戌神ころね×兎田ぺこら×天音かなた×雪花ラミィ"
+    },
+    "sxMUJSK5u4g": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "コールボーイ／猫又おかゆ＆天音かなた(Cover)"
+    },
+    "tGXZNHNhI0I": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 8,
+      "title": "馬と鹿 - 米津玄師／天音かなた(Cover)"
+    },
+    "tgcwdmMIdL0": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "Bling-Bang-Bang-Born / 天音かなた(cover)"
+    },
+    "tnzNvtvJmJw": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "Loveit? // covered by KALAZ（AZKi・天音かなた・雪花ラミィ）"
+    },
+    "twEQClq5zuk": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 4,
+      "title": "わざとあざとエキスパート／covered by 星川サラ×天音かなた×胡桃のあ×獅子堂あかり"
+    },
+    "uBpAdYDupAs": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "イガク / 天音かなた＋ユ！隊(cover)"
+    },
+    "wk9L86Dc92M": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "お願い！シンデレラ (Game ver.) / AZKi × 天音かなた(cover)"
+    },
+    "wnjuq2cX2JM": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 2,
+      "title": "お呪い / 天音かなた×さくらみこ×紫咲シオン×宝鐘マリン×姫森ルーナ×沙花叉クロヱ(cover)"
+    },
+    "wvtP9tUr_S4": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "セルフサービス / 天音かなた(official)"
+    },
+    "yk51RdzaMUE": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 3,
+      "title": "月陽-ツキアカリ-／星街すいせい＆天音かなた(Cover)"
+    },
+    "zHD5MCUezVo": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 0,
+      "title": "【ホロライブ・サマー2022 MV第1弾】『飛んでK！ホロライブサマー』ショートMV【ホロライブ】"
+    },
+    "zREufEpj0zM": {
+      "approach_notified_for": null,
+      "history": [],
+      "last_milestone": 1,
+      "title": "【Original anime MV】天使のagape【天音かなた/hololive】"
+    }
+  }
 }
