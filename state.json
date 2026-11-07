@@ -339,8 +339,14 @@
     },
     "Pb-n8O4C4To": {
       "approach_notified_for": 4,
-      "history": [],
-      "last_milestone": 3,
+      "history": [
+        {
+          "milestone": 4,
+          "reached_at": "2026-11-07T15:40:44Z",
+          "views_at_detection": 4000383
+        }
+      ],
+      "last_milestone": 4,
       "title": "【LIVE】メフィスト - 天音かなた cover【hololive】"
     },
     "PyAixTkD4YY": {
