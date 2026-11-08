@@ -525,8 +525,14 @@
     },
     "av9hRwPuhpw": {
       "approach_notified_for": 2,
-      "history": [],
-      "last_milestone": 1,
+      "history": [
+        {
+          "milestone": 2,
+          "reached_at": "2026-11-08T06:05:40Z",
+          "views_at_detection": 2000012
+        }
+      ],
+      "last_milestone": 2,
       "title": "KING / 天音かなた(cover)"
     },
     "b3jcNR2_PF4": {
