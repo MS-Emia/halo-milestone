@@ -687,8 +687,14 @@
     },
     "mQxHUn9E-Ec": {
       "approach_notified_for": 1,
-      "history": [],
-      "last_milestone": 0,
+      "history": [
+        {
+          "milestone": 1,
+          "reached_at": "2026-11-18T21:58:38Z",
+          "views_at_detection": 1000425
+        }
+      ],
+      "last_milestone": 1,
       "title": "【激アツ歌唱】革命デュアリズム - 天音かなた＆アユンダ・リス cover【hololive】"
     },
     "mcQs0iQE0bs": {
