@@ -1,8 +1,11 @@
 name: check milestones
 
 on:
+  # 主な起動元は外部の cron サービス(cron-job.org など)からの workflow_dispatch。
+  # GitHub の schedule は混雑時に大きく遅れたり飛ばされたりする(実測で1日2〜4回しか
+  # 動かなかった)ので、外部トリガーが止まったときの予備としてだけ残している。
+  # 毎時0分はGitHub全体で混雑して遅延・スキップされやすいので17分にずらす
   schedule:
-    # 毎時0分はGitHub全体で混雑して遅延・スキップされやすいので17分にずらす
     - cron: "17 * * * *"
   workflow_dispatch:
     inputs:
@@ -29,6 +32,12 @@ jobs:
       has_site: ${{ steps.site.outputs.has_site }}
     steps:
       - uses: actions/checkout@v7
+        with:
+          # 外部トリガーと schedule が重なると、後の実行は concurrency で待たされる。
+          # 既定ではトリガー時点の commit を取るので、待っている間に前の実行が push した
+          # state.json を読めず、同じ通知を二重に送ってしまう。ブランチ名を指定して、
+          # 実行開始時点の最新の state.json を読むようにする
+          ref: ${{ github.event.repository.default_branch }}
 
       - uses: actions/setup-python@v7
         with:

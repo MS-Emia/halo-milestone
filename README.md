@@ -28,7 +28,29 @@
    2. `test_webhook`: Discord にテスト通知が1通届きます。
    3. `normal`: 本番実行です。初回は全動画を「基準化」するだけで、到達通知は送りません(次の節目まで5万回以下の動画にだけ事前通知が届きます)。
 
-その後は毎時17分に自動で実行されます。
+8. 外部の cron サービスから毎時起動するように設定します(次の節)。GitHub の schedule(毎時17分)だけでは、混雑時に1日数回しか動かないことがあります。
+
+## 外部 cron からの起動
+
+GitHub Actions の schedule は混雑時に大きく遅れたり飛ばされたりします(実測で、毎時の設定に対して1日2〜4回しか動かなかったことがあります)。そこで、外部の cron サービスから GitHub API を呼んで `workflow_dispatch` で起動します。schedule は予備として残しています。
+
+1. GitHub → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token
+   - Repository access: **Only select repositories** でこのリポジトリだけを選ぶ
+   - Permissions → Repository permissions → **Actions: Read and write**(ほかは不要)
+   - 有効期限は最長1年です。期限が切れると起動できなくなるので、カレンダーに更新日を入れておいてください
+2. [cron-job.org](https://cron-job.org/)(無料)でジョブを作成します。
+   - URL: `https://api.github.com/repos/<owner>/<repo>/actions/workflows/check.yml/dispatches`
+   - Schedule: 毎時(例: 毎時5分)
+   - Advanced → Request method: **POST**
+   - Headers:
+     - `Accept: application/vnd.github+json`
+     - `Authorization: Bearer <1のトークン>`
+     - `X-GitHub-Api-Version: 2022-11-28`
+   - Request body: `{"ref":"main","inputs":{"mode":"normal"}}`
+   - Notifications で「実行が失敗したとき」にメールを受け取るようにしておくと、トークン切れにすぐ気づけます
+3. 「Test run」を押して、応答が **204**(または 200)になり、Actions タブに `workflow_dispatch` の実行が現れれば完了です。
+
+外部トリガーと schedule が同時に起動しても、`concurrency` で順番に実行され、後の実行は前の実行が commit した `state.json` を読むので、通知は重複しません。
 
 ## 設定(`config.json`)
 
@@ -54,7 +76,7 @@ PowerShell では環境変数を `$env:DRY_RUN = "1"` のように設定しま�
 ## 仕組み
 
 ```
-GitHub Actions (cron 毎時17分)
+外部 cron (毎時) → workflow_dispatch / 予備: GitHub Actions schedule (毎時17分)
   └ scripts/check.py
       ├ YouTube Data API v3 から再生数を取得
       ├ state.json と比べて通知が必要か判定
@@ -86,8 +108,8 @@ GitHub Actions (cron 毎時17分)
 
 ## 運用上の注意
 
-- **schedule の自動無効化**: 公開リポジトリでは、60日間リポジトリに活動が無いと schedule が自動で無効になります。workflow による `state.json` の commit が「活動」に数えられるかは確認できていません。通知が止まったら、Actions タブで workflow を再有効化してください。
-- cron は遅れたり、まれにスキップされたりします。サイトでは、最終更新から3時間以上たつと警告を出します。
+- **schedule の自動無効化**: 外部 cron からの `workflow_dispatch` はこの影響を受けません。予備の schedule については、公開リポジトリでは、60日間リポジトリに活動が無いと schedule が自動で無効になります。workflow による `state.json` の commit が「活動」に数えられるかは確認できていません。通知が止まったら、Actions タブで workflow を再有効化してください。
+- GitHub の schedule は遅れたりスキップされたりするので、主な起動は外部 cron に任せています。外部 cron の失敗通知メールが届いたら、まずトークンの期限を確認してください。サイトでは、最終更新から3時間以上たつと警告を出します。
 - `state.json` の commit に失敗すると、次回に同じ通知が重複して届くことがあります(仕様として許容しています)。
 - GitHub Pages は URL を知っていれば誰でも見られます。検索避けとして `noindex` を付けています。
 
